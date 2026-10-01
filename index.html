@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="A quiet placeholder for Axiur." />
+  <title>Axiur</title>
+  <style>
+    html, body {
+      margin: 0;
+      width: 100%;
+      min-height: 100%;
+      background: #0d1722;
+    }
+    body {
+      min-height: 100svh;
+      overflow: hidden;
+    }
+    .hero {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100svh;
+    }
+    .hero picture,
+    .hero img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .hero img {
+      object-fit: cover;
+      object-position: center center;
+    }
+    @media (max-width: 700px) {
+      .hero img {
+        object-position: center center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="hero">
+    <picture>
+      <source media="(max-width: 700px)" srcset="axiur-desert-mobile.png" />
+      <img
+        src="axiur-desert-desktop.png"
+        alt="Axiur — A quiet place for a previous chapter."
+      />
+    </picture>
+  </main>
+</body>
+</html>
